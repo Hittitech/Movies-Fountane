@@ -21,7 +21,6 @@ const MovieCard: React.FC<MovieCardProps> = ({
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <Image
         className="m-auto p-2"
-        loading="lazy"
         src={`https://image.tmdb.org/t/p/w500${poster_path}`}
         width={300}
         height={250}

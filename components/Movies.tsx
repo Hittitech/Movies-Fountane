@@ -3,7 +3,6 @@ import React from 'react'
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import MovieCard from './MovieCard';
-import Shimmer from './Shimmer';
 
 export interface Movie{
   id:number,
@@ -27,11 +26,7 @@ const Movies = () => {
   if(isLoading) {
 
     return(
-          <div className='w-3/4 grid grid-cols-4 gap-4 mx-auto'>
-          {Array.from({ length: numberOfShimmers }).map((_, index) => (
-            <Shimmer  /> 
-          ))}
-        </div>
+         <div className='text-center m-auto'>Loading</div>
     )
   }
   if(isError)return <div>Error occured due to api limit </div>
