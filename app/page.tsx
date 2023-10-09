@@ -13,6 +13,8 @@ export const dynamic = 'force-dynamic'
 
 
 export default async function Index() {
+
+  //supabase authentication
   const supabase = createServerComponentClient({ cookies })
 
   const {
@@ -42,7 +44,7 @@ export default async function Index() {
         </div>
       </nav>
 
-      <div className=" mx-auto w-3/4 grid ">
+      <div className="  w-3/4">
         
       {user?<Movies/>:<HomePage/>}
     </div>

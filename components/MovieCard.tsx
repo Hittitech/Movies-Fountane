@@ -18,13 +18,13 @@ const MovieCard: React.FC<MovieCardProps> = ({
   release_date,
 }: MovieCardProps) => {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="  bg-white border border-gray-200 rounded-lg shadow ">
       <Image
         className="m-auto p-2"
         src={`https://image.tmdb.org/t/p/w500${poster_path}`}
-        width={300}
+        width={250}
         height={250}
-        alt="Movie Image"
+        alt="Movie Image "
       />
       <div className="p-3">
         <h5 className="mb-2 px-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

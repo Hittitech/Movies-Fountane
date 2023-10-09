@@ -31,10 +31,10 @@ const Movies = () => {
   }
   if(isError)return <div>Error occured due to api limit </div>
   return (
-    <div className='w-3/4 mt-4 gap-4  grid grid-cols-4 mx-auto'>
+    <div className=' grid grid-cols-4 gap-4'>
      {
       data.map((movie)=>(
-          <MovieCard  {...movie}/>
+          <MovieCard   {...movie}/>
         
       ))
      }
