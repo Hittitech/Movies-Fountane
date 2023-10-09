@@ -31,7 +31,7 @@ const Movies = () => {
   }
   if(isError)return <div>Error occured due to api limit </div>
   return (
-    <div className=' grid grid-cols-4 gap-4'>
+    <div className=' grid grid-cols-4  gap-4 m-auto'>
      {
       data.map((movie)=>(
           <MovieCard   {...movie}/>
