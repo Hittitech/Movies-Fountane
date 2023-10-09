@@ -42,13 +42,13 @@ export default async function Index() {
         </div>
       </nav>
 
-      <div className=" mx-auto w-3/4 ">
+      <div className=" mx-auto w-3/4 grid ">
         
       {user?<Movies/>:<HomePage/>}
     </div>
-    <footer className=' align-bottom font-bold w-full bg-slate-200 text-center mt-4  p-2  '>
+    {user?<footer className=' align-bottom font-bold w-full bg-slate-200 text-center mt-4  p-2  '>
       Happy Assignment Verification
-    </footer>
+    </footer>:<></>}
     </div>
   )
 }
